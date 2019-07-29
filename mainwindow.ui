@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>385</width>
+    <height>367</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*
+
+ * Macmur Theme for Mumble
+ * Version 1.2
+ * For updates check samfielding.net/macmur
+
+*/
+
+* {
+  selection-background-color: #a6cafe;
+  selection-color: white;
+  color: #2C2F33;
+  font-family: &quot;Helvetica Neue&quot;, Times, serif;
+}
+
+QTreeView {
+  background-color: #F0F1F5;
+  color: #4D4D4D;
+  selection-background-color: #2770F6;
+  selection-color: #ffffff;
+  border: 0px;
+  font-family: &quot;Helvetica Neue&quot;, Times, serif;
+  opacity: 0.4;
+}
+
+QToolTip {
+	background: #EAEAEA;
+	color: #111111;
+}
+
+
+QMainWindow#MainWindow {
+	background: #F0F4F9;
+}
+
+QMenuBar {
+	background: #F0F4F9;
+}
+
+
+QTextBrowser {
+  background-color: #ffffff;
+  border: 0px solid;
+  color: #4D4D4D;
+  padding: 0px;
+  font-family: &quot;Helvetica Neue&quot;, Helvetica, serif;
+}
+
+a {
+  color: #0D6EFF;
+  text-decoration: none;
+}
+
+#qdwChat QTextEdit {
+  color: #000000;
+  font-size: 12px;
+  background-color: #ffffff;
+  font-style: bold;
+  font-family: &quot;Helvetica Neue&quot;, Times, serif;
+}
+QToolBar::separator {
+  background: #868686;
+  height: 1px;
+  margin-left: -0px;
+  margin-right: -0px;
+  width: 1px;
+  padding: -100px;
+}
+
+QToolBar {
+  display: none;
+  }
+
+
+QToolButton {
+  padding-right: 10px;
+  height: 13px;
+  width: 13px;	
+  margin: 0px;
+  border: 0px; 
+}
+
+QToolButton:pressed {
+  padding-right: 10px;
+  height: 13px;
+  width: 13px;	
+  margin: 0px;
+  border: 0px; 
+}
+
+QToolButton:on {
+  padding-right: 10px;
+  height: 13px;
+  width: 13px;	
+  margin: 0px;
+  border: 0px; 
+}
+
+.log-time {
+  color: #828C9F;
+}
+
+.log-channel {
+  color: #2C2F33;
+  font-weight:bold;
+}
+
+.log-server {
+  color: #2C2F33;
+  font-weight:bold;
+}
+
+.log-source {
+  color: #2C2F33;
+  font-weight:bold;
+}
+
+.log-target {
+  color: #2C2F33;
+  font-weight:bold;
+}
+
+QPushButton {
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #2470aa, stop: 1 #8dbbdf);
+	border: 1px solid #2470aa;
+	border-radius: 3px;
+	padding: 3px 5px;
+	color: #082232;
+}
+
+QCheckBox, QLabel {
+	color: #082232;
+}
+
+QToolBar {
+	border: 0px;
+	background: #333;
+}
+
+QToolBar::separator {
+	background: #092435;
+	width: 0px;
+}
+
+QToolBar::handle {
+	image: url(skin:toolbar-handle.png);
+	width: 10px;
+}
+
+#qtIconToolbar {
+	background: #020f17 url(skin:logo.png) no-repeat center right;	
+}
+
+QMenuBar {
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #062f48, stop:1 #020f17);
+}
+
+QMenuBar::item {
+	spacing: 3px; 
+	padding: 1px 6px;
+	background: transparent;
+	color: #fff;
+}
+
+QMenu::item:disabled {
+	color: #777;
+}
+
+QMenuBar::item:selected, QMenuBar::item:hover { 
+	background: #144562;
+}
+
+QMenu {
+	background: #144562;
+	border-top: 0px;
+	border-left: 1px solid qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 transparent, stop: 1 #8dbbdf);
+	border-bottom: 1px solid #8dbbdf;
+	border-right: 1px solid qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 transparent, stop: 1 #8dbbdf);
+}
+
+QMenu::item {
+	color: #fff;
+}
+
+QMenu::item:selected {
+	background: #205474;
+}
+
+QTabWidget::pane { 
+	border-radius: 0px;
+	background: url(skin:white-20.png);
+	margin: 0px 10px 10px 7px;
+	border-bottom: 1px solid #8dbbdf;
+	border-left: 1px solid qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 transparent, stop: 1 #8dbbdf);
+	border-bottom: 1px solid #8dbbdf;
+	border-right: 1px solid qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 transparent, stop: 1 #8dbbdf);
+}
+
+QTabWidget::tab-bar {
+	left: 6px;
+}
+
+QTabWidget QPushButton {
+	margin: 0 1px;
+}
+
+QTabBar::tab {
+	color: #fff;
+	margin-left: 2px;
+	background: url(skin:white-20.png);
+	border: 0px;
+	min-width: 8ex;
+	padding: 2px 4px;
+}
+
+QTabBar::tab:!selected {
+	margin-top: 5px;
+}
+
+QCheckBox:disabled {
+	color: #19394d;
+}
+
+QCheckBox::indicator:checked {
+	image: url(skin:check.png);
+}
+
+QCheckBox::indicator {
+	width: 6px;
+	height: 6px;
+	padding: 2px;
+	border: 2px solid #89b0cf;
+	background: url(skin:white-20.png);
+	border-radius: 3px;
+}
+
+QHeaderView::section {
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #aceaf5, stop:1 #86cdd9);
+	color: #111;
+	border-top: 1px solid #1e6e7c;
+	border-bottom: 1px solid #1e6e7c;
+	border-right: 1px solid #1e6e7c;
+	padding: 2px 0 2px 5px;
+	color: #134750;
+}
+
+QHeaderView::section:first {
+	border-left: 1px solid #1e6e7c;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>331</width>
+      <height>241</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="ListaOrigem">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="ListaDestino">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>20</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Itinerario</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>385</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionCarregar"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionCarregar">
+   <property name="text">
+    <string>Carregar</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
